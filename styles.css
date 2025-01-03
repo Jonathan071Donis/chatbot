@@ -144,7 +144,7 @@ button:hover {
 
 .chatbot-window {
     position: fixed;
-    bottom: 80px;
+    bottom: 80px; /* Ajustado para que aparezca encima de la burbuja */
     right: 20px;
     width: 320px; /* Aumentado para mayor tamaño */
     background: #2a2a4a;
@@ -153,7 +153,7 @@ button:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    z-index: 999; /* Asegura que esté por encima de otros elementos */
+    z-index: 1001; /* Asegura que esté por encima de otros elementos */
 }
 
 .chatbot-window.hidden {
