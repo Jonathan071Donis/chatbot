@@ -134,6 +134,7 @@ button:hover {
     font-size: 2.5rem; /* Aumentado para mayor tamaño de texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: block; /* Asegura que se muestre en dispositivos móviles */
 }
 
 .chatbot-window {
@@ -409,6 +410,7 @@ input {
         right: 10px; 
         bottom: 10px; 
         font-size: 1.5rem; 
+        display: block; /* Asegura que se muestre en móviles */
     }
 
     .modal-content {
