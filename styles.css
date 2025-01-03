@@ -226,18 +226,18 @@ input {
 
 .modal-content {
     background: #2a2a4a;
-    padding: 20px;
+    padding: 15px; /* Reducido para mayor compacidad */
     border-radius: 10px;
     text-align: center;
-    max-width: 90%; 
-    width: 500px; 
+    max-width: 90%;   
+    width: 400px; /* Ancho fijo reducido */
 }
 
 /* Calendario */
 #calendar-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Cambiar a 1 columna para disposición vertical */
-    gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px; /* Reducido espaciado entre elementos */
     padding: 10px;
 }
 
@@ -246,10 +246,11 @@ input {
     background: #2a2a4a;
     color: #fff;
     border-radius: 5px;
-    padding: 15px;
+    padding: 10px; /* Reducido para compactar los elementos */
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 14px; /* Tamaño de texto más pequeño */
 }
 
 .calendar-item:hover {
@@ -338,11 +339,12 @@ input {
     background: #ffa500;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px; /* Reducido para mayor compacidad */
     border-radius: 5px;
     cursor: pointer;
     margin: 20px auto; 
     display: block; 
+    font-size: 14px; /* Tamaño de texto más pequeño */
 }
 
 #btn-regresar:hover {
@@ -385,12 +387,15 @@ input {
     }
 
     .modal-content {
-        width: 90%; 
-        padding: 15px; 
+        width: 90%; /* Asegura que la modal ocupe el 90% en móviles */
+        padding: 8px; /* Ajusta el padding */
+        max-width: 200px; /* Máxima anchura para que sea más pequeña */
     }
 
     .grid-container {
-        grid-template-columns: repeat(1, 1fr); 
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas en móviles para disposición horizontal */
+        gap: 5px; /* Espaciado entre los elementos */
     }
 
     .developer-info {
@@ -404,5 +409,21 @@ input {
     button {
         width: 100%; 
         padding: 12px; 
+    }
+
+    /* Ajustes para días del calendario */
+    .calendar-item {
+        font-size: 9px; /* Ajuste del tamaño de texto en móviles */
+        padding: 4px; /* Ajuste del padding en móviles */
+    }
+
+    #btn-regresar {
+        padding: 5px 8px; /* Ajuste del botón en móviles */
+        font-size: 11px; /* Ajuste del tamaño de texto en móviles */
+    }
+
+    .day-box {
+        padding: 6px; /* Ajusta el padding de los días */
+        font-size: 11px; /* Ajuste del tamaño de texto */
     }
 }
