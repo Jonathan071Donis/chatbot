@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón Futurista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>MB</h2>
+            <nav>
+                <ul>
+                    <li><a id="dashboard-link" href="https://mb-kwu5.vercel.app/">Estudio MB</a></li>
+                    <li><a id="calendar-link" href="https://enojona.vercel.app/">Princesa Enojona</a></li>
+                    <li><a id="chatbot-link" href="https://wifi-nine.vercel.app/">Generador de QR-WIFI</a></li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <div class="developer-info">Desarrollado por J.Donis071</div>
+            </footer>
+        </aside>
+
+        <div class="content">
+            <header>
+                <h1>Panel de Control</h1>
+            </header>
+
+            <section id="dashboard" class="hidden">
+                <h2>Dashboard</h2>
+                <div class="stats">
+                    <div class="stat circle">
+                        <h3>Citas Agendadas</h3>
+                        <p id="citas-count">0</p>
+                    </div>
+                    <div class="stat diamond">
+                        <h3>Ingresos Totales</h3>
+                        <p id="ingresos-total">Q0.00</p>
+                    </div>
+                </div>
+                <button id="btn-agregar-cita">Agendar Cita</button>
+                <button id="btn-eliminar-todas">Eliminar Todas las Citas</button>
+                <button id="btn-imprimir">Imprimir PDF</button>
+                <!-- <div class="motivational-quote">
+                    <p>"La belleza comienza en el momento en que decides ser tú mismo." - Coco Chanel</p>
+                    <img src="https://png.pngtree.com/png-clipart/20230811/original/pngtree-beauty-salon-with-hair-and-makeup-services-inside-coloring-flat-vector-png-image_10267636.png" alt="Salón de uñas y peinados" />
+                </div> -->
+            </section>
+
+            <section id="calendar" class="hidden">
+                <h2>Calendario de Citas</h2>
+                <div id="calendar-grid"></div>
+            </section>
+        </div>
+    </div>
+
+    <div id="chatbot-bubble" class="chatbot-bubble">🥷</div>
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <header>Chatbot Princesa Enojona</header>
+        <div id="messages" class="messages"></div>
+        <footer>
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+            <button id="send-btn">Enviar</button>
+        </footer>
+    </div>
+
+    <!-- Modal de Agendar Cita -->
+    <div id="modal-cita" class="modal hidden">
+        <div class="modal-content">
+            <h2>Agendar Cita</h2>
+            <label>Fecha: <input type="date" id="cita-fecha"></label>
+            <label>Hora: <input type="time" id="cita-hora"></label>
+            <label>Costo: <input type="number" id="cita-costo" placeholder="Q"></label>
+            <button id="save-cita">Guardar</button>
+            <button id="close-modal">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar días de un mes -->
+    <div id="modalMes" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModalMes" class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="month-grid" class="grid-container"></div>
+            <button id="btn-regresar">Regresar</button>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar citas de un día específico -->
+    <div id="modalCitasDia" class="modal hidden">
+        <div class="modal-content">
+            <h2>Citas del Día</h2>
+            <ul id="citas-dia-list"></ul>
+            <button id="close-citas-dia">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
