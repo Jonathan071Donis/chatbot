@@ -9,18 +9,20 @@ body {
 .main-container {
     display: flex;
     height: 100vh;
-    flex-direction: row;
+    flex-direction: row; /* Mantener la dirección de fila */
 }
 
 /* Sidebar */
 .sidebar {
     background: #2a2a4a;
-    width: 250px;
+    width: 250px; /* Ancho fijo */
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     transition: transform 0.3s;
     position: relative;
+    display: flex; /* Cambiado a flex para el contenido vertical */
+    flex-direction: column; /* Para que los elementos se alineen verticalmente */
 }
 
 .sidebar:hover {
@@ -117,7 +119,6 @@ button {
 
 button:hover {
     background: #e69500;
-    transform: scale(1.05); 
 }
 
 /* Chatbot */
@@ -127,10 +128,10 @@ button:hover {
     right: 20px;
     background: #ffa500;
     color: #fff;
-    padding: 15px; /* Aumentado para mayor tamaño */
+    padding: 20px; /* Aumentado para mayor tamaño */
     border-radius: 50%;
     cursor: pointer;
-    font-size: 2rem; /* Aumentado para mayor tamaño de texto */
+    font-size: 2.5rem; /* Aumentado para mayor tamaño de texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -138,7 +139,7 @@ button:hover {
     position: fixed;
     bottom: 80px;
     right: 20px;
-    width: 300px;
+    width: 320px; /* Aumentado para mayor tamaño */
     background: #2a2a4a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -233,14 +234,27 @@ input {
     width: 400px; /* Ancho fijo reducido */
 }
 
-/* Calendario */
 #calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px; /* Reducido espaciado entre elementos */
+    display: flex; /* Asegúrate de que sea flex */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 10px; /* Espaciado entre los meses */
     padding: 10px;
 }
 
+/* Estilo para cada mes */
+.month-box {
+    background: #2a2a4a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.month-box:hover {
+    transform: translateY(-5px); 
+    background: linear-gradient(135deg, #ffa500, #ffcc00); 
+}
 /* Estilo para cada día del calendario */
 .calendar-item {
     background: #2a2a4a;
@@ -298,6 +312,13 @@ input {
     transition: transform 0.3s, background-color 0.3s;
 }
 
+/* Nuevos estilos para organizar los meses verticalmente */
+.months-container {
+    display: flex;
+    flex-direction: column; /* Asegura que los meses se apilen verticalmente */
+    gap: 10px; /* Espacio entre los meses */
+}
+
 .month-box:hover {
     transform: translateY(-5px); 
     background: linear-gradient(135deg, #ffa500, #ffcc00); 
@@ -350,7 +371,6 @@ input {
 #btn-regresar:hover {
     background: #e69500;
 }
-
 /* Responsive styles */
 @media (max-width: 768px) {
     .main-container {
@@ -388,14 +408,18 @@ input {
 
     .modal-content {
         width: 90%; /* Asegura que la modal ocupe el 90% en móviles */
-        padding: 8px; /* Ajusta el padding */
-        max-width: 200px; /* Máxima anchura para que sea más pequeña */
+        padding: 16px; /* Ajusta el padding */
+        max-width: 400px; /* Aumenta la máxima anchura para que sea más grande */
+        display: flex; /* Cambia a flexbox para disposición horizontal */
+        flex-direction: row; /* Alinea los elementos en fila */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten */
     }
 
     .grid-container {
         display: grid; 
         grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas en móviles para disposición horizontal */
         gap: 5px; /* Espaciado entre los elementos */
+        width: 100%; /* Asegura que ocupe todo el ancho */
     }
 
     .developer-info {
