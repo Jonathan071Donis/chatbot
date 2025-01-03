@@ -133,6 +133,7 @@ button:hover {
     cursor: pointer;
     font-size: 2.5rem; /* Aumentado para mayor tamaño de texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
 .chatbot-window {
@@ -146,6 +147,7 @@ button:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
 }
 
 .chatbot-window.hidden {
@@ -255,6 +257,7 @@ input {
     transform: translateY(-5px); 
     background: linear-gradient(135deg, #ffa500, #ffcc00); 
 }
+
 /* Estilo para cada día del calendario */
 .calendar-item {
     background: #2a2a4a;
@@ -371,6 +374,7 @@ input {
 #btn-regresar:hover {
     background: #e69500;
 }
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .main-container {
@@ -398,6 +402,7 @@ input {
     .chatbot-window {
         width: 90%; 
         right: 5%; 
+        bottom: 80px; /* Asegura que esté por encima de la burbuja */
     }
 
     .chatbot-bubble {
