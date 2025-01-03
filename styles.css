@@ -401,24 +401,35 @@ input {
     }
 
     .chatbot-window {
-        width: 90%; 
-        right: 5%; 
-        bottom: 80px; /* Mantiene la ventana por encima de la burbuja */
-        max-height: 60%; /* Limita la altura máxima para evitar desbordamientos */
-        overflow-y: auto; /* Permite desplazamiento si el contenido excede la altura */
+        width: 85%; /* Ancho del chatbot */
+        right: 10px; /* Distancia del borde derecho */
+        bottom: 80px; /* Distancia del borde inferior */
+        max-height: 70%; /* Limita la altura máxima */
+        overflow-y: auto; /* Permite desplazamiento */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+        position: fixed; /* Mantiene la ventana visible */
+        background: #2a2a4a; /* Color de fondo */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
     }
 
     .chatbot-bubble {
         right: 10px; 
-        bottom: 10px; 
+        bottom: 10px; /* Ajusta la posición de la burbuja */
         font-size: 1.5rem; 
         display: block; /* Asegura que se muestre en móviles */
+        background: #ffa500; /* Color de fondo de la burbuja */
+        color: #fff; /* Color del texto */
+        padding: 15px; /* Espaciado interno */
+        border-radius: 20px; /* Bordes redondeados para el estilo burbuja */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de alerta */
+        cursor: pointer; /* Cambia el cursor al pasar sobre la burbuja */
     }
 
     .modal-content {
         width: 90%; /* Asegura que la modal ocupe el 90% en móviles */
         padding: 16px; /* Ajusta el padding */
-        max-width: 400px; /* Aumenta la máxima anchura para que sea más grande */
+        max-width: 400px; /* Aumenta la máxima anchura */
         display: flex; /* Cambia a flexbox para disposición horizontal */
         flex-direction: row; /* Alinea los elementos en fila */
         flex-wrap: wrap; /* Permite que los elementos se ajusten */
@@ -426,7 +437,7 @@ input {
 
     .grid-container {
         display: grid; 
-        grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas en móviles para disposición horizontal */
+        grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas en móviles */
         gap: 5px; /* Espaciado entre los elementos */
         width: 100%; /* Asegura que ocupe todo el ancho */
     }
