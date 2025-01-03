@@ -403,7 +403,9 @@ input {
     .chatbot-window {
         width: 90%; 
         right: 5%; 
-        bottom: 80px; /* Asegura que esté por encima de la burbuja */
+        bottom: 80px; /* Mantiene la ventana por encima de la burbuja */
+        max-height: 60%; /* Limita la altura máxima para evitar desbordamientos */
+        overflow-y: auto; /* Permite desplazamiento si el contenido excede la altura */
     }
 
     .chatbot-bubble {
