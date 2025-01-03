@@ -17,20 +17,20 @@ body {
     background: #2a2a4a;
     width: 250px;
     padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada para efecto 3D */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s; /* Suaviza la transformación */
-    position: relative; /* Para contener la posición absoluta del texto */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: transform 0.3s;
+    position: relative;
 }
 
 .sidebar:hover {
-    transform: translateX(5px); /* Efecto de desplazamiento al pasar el mouse */
+    transform: translateX(5px);
 }
 
 .sidebar h2 {
     color: #ffa500;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto para efecto futurista */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar nav ul {
@@ -45,23 +45,23 @@ body {
 .sidebar nav ul li a {
     color: #fff;
     text-decoration: none;
-    display: block; /* Para que el área de clic sea más amplia */
-    padding: 10px; /* Espaciado interno para los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background 0.3s; /* Suaviza el cambio de fondo */
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .sidebar nav ul li a:hover {
-    background: rgba(255, 165, 0, 0.3); /* Fondo al pasar el mouse */
+    background: rgba(255, 165, 0, 0.3);
 }
 
 /* Developer Info */
 .developer-info {
-    margin-top: 20px; /* Espaciado superior */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    background: rgba(255, 165, 0, 0.3); /* Fondo similar a las opciones del menú */
-    text-align: center; /* Centrar el texto */
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 165, 0, 0.3);
+    text-align: center;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -70,7 +70,7 @@ body {
 .content {
     flex: 1;
     padding: 20px;
-    overflow-y: auto; /* Agregado para permitir scrolling si el contenido es largo */
+    overflow-y: auto;
 }
 
 header {
@@ -78,14 +78,14 @@ header {
     padding: 10px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    text-align: center; /* Centrar el título */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .stats {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .stat {
@@ -93,13 +93,13 @@ header {
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    flex: 1 1 200px; /* Flexibilidad para que se ajuste en pantallas pequeñas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efecto 3D */
-    transition: transform 0.3s; /* Suaviza la transformación */
+    flex: 1 1 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
 }
 
 .stat:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    transform: translateY(-5px);
 }
 
 button {
@@ -109,15 +109,15 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px auto; /* Centrar el botón */
-    display: block; /* Para centrar el botón */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efecto 3D */
-    transition: background 0.3s, transform 0.3s; /* Suaviza el cambio de fondo y transformación */
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s;
 }
 
 button:hover {
     background: #e69500;
-    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    transform: scale(1.05);
 }
 
 /* Chatbot */
@@ -161,11 +161,11 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 400px; /* Ajusta la altura según tus necesidades */
-    overflow-y: auto; /* Permite scroll vertical */
+    height: 400px;
+    overflow-y: auto;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f0f0f0; /* Color de fondo claro */
+    background-color: #f0f0f0;
 }
 
 /* Estilo para los mensajes */
@@ -174,22 +174,22 @@ button:hover {
     padding: 10px;
     border-radius: 8px;
     max-width: 80%;
-    word-wrap: break-word; /* Permite que el texto largo se divida en múltiples líneas */
+    word-wrap: break-word;
 }
 
 /* Estilo para el mensaje del usuario */
 .usuario {
-    background-color: #dcf8c6; /* Verde claro */
-    align-self: flex-end; /* Alinear mensajes del usuario a la derecha */
-    color: #000; /* Color de texto negro para el usuario */
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    color: #000;
 }
 
 /* Estilo para el mensaje del chatbot */
 .chatbot {
-    background-color: #ffffff; /* Blanco */
-    align-self: flex-start; /* Alinear mensajes del chatbot a la izquierda */
-    border: 1px solid #ccc; /* Borde sutil */
-    color: #000; /* Color de texto negro para el chatbot */
+    background-color: #ffffff;
+    align-self: flex-start;
+    border: 1px solid #ccc;
+    color: #000;
 }
 
 footer {
@@ -202,8 +202,6 @@ footer {
 input {
     flex: 1;
     padding: 10px;
-    border: none;
-    border-radius: 5px;
 }
 
 /* Modals */
@@ -217,7 +215,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    z-index: 1000;
 }
 
 .modal.hidden {
@@ -229,16 +227,15 @@ input {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    max-width: 90%; /* Ancho máximo para pantallas pequeñas */
-    width: 500px; /* Ancho estándar para pantallas grandes */
+    max-width: 90%;
+    width: 500px;
 }
 
 /* Calendario */
 #calendar-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 columnas, una para cada día de la semana */
+    grid-template-columns: repeat(7, 1fr);
     gap: 10px;
-    padding: 10px;
 }
 
 /* Estilo para cada día del calendario */
@@ -258,14 +255,14 @@ input {
 
 /* Estilo para los días con citas (se marcarán en rojo) */
 .calendar-item.has-citas {
-    background-color: #ff6666; /* Rojo claro */
+    background-color: #ff6666;
     font-weight: bold;
     color: white;
 }
 
 /* Estilo para los días seleccionados */
 .calendar-item.selected {
-    background-color: #ffa500; /* Naranja para el día seleccionado */
+    background-color: #ffa500;
     color: white;
 }
 
@@ -294,18 +291,18 @@ input {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s; /* Suaviza el cambio de posición y color */
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .month-box:hover {
-    transform: translateY(-5px); /* Mueve el mes hacia arriba al pasar el mouse */
-    background: linear-gradient(135deg, #ffa500, #ffcc00); /* Color 3D al pasar el mouse */
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ffa500, #ffcc00);
 }
 
 /* Cambios en el modal y días */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr); /* Horizontal en pantallas grandes */
     gap: 10px;
 }
 
@@ -341,26 +338,14 @@ input {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 20px auto; /* Centrar el botón */
-    display: block; /* Para centrar el botón */
+    margin: 20px auto;
+    display: block;
 }
 
 #btn-regresar:hover {
     background: #e69500;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #3a3a5f;
-    color: #fff;
-    text-align: center;
-    padding: 2px 0; /* Espaciado interno aún más reducido */
-    /* border-top: 1px solid rgba(255, 165, 0, 0.5);  Línea superior eliminada */
-    font-size: 0.8em; /* Tamaño de fuente más pequeño */
-}
 /* Responsive styles */
 @media (max-width: 768px) {
     .main-container {
@@ -390,36 +375,38 @@ input {
         right: 5%; /* Centrar el chatbot */
     }
 
-    /* Ajustes para el chatbot */
     .chatbot-bubble {
-        right: 10px; /* Espaciado desde el borde en pantallas pequeñas */
-        bottom: 10px; /* Espaciado desde el borde en pantallas pequeñas */
-        font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+        right: 10px;
+        bottom: 10px;
+        font-size: 1.2rem;
     }
 
-    /* Modals */
     .modal-content {
         width: 90%; /* Ancho máximo en pantallas pequeñas */
         padding: 15px; /* Menos padding en pantallas pequeñas */
     }
 
-    /* Ajustar el grid de meses para pantallas pequeñas */
     .grid-container {
         grid-template-columns: repeat(1, 1fr); /* 1 columna para meses en pantallas pequeñas */
     }
 
-    /* Ajustar Developer Info */
     .developer-info {
-        bottom: 10px; /* Ajustar la posición para pantallas pequeñas */
-        font-size: 14px; /* Reducir tamaño de fuente */
-        width: 100%; /* Ocupar el 100% del ancho */
-        text-align: center; /* Centrar el texto */
-        transform: translateX(0); /* No centrar horizontalmente */
+        bottom: 10px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        transform: translateX(0);
     }
 
-    /* Estilo para los botones dentro de los modales */
     button {
         width: 100%; /* Botones ocupan todo el ancho en modales */
-        padding: 12px; /* Aumentar el padding para más comodidad */
+        padding: 12px;
+    }
+}
+
+/* Estilos para el modal de meses */
+@media (min-width: 769px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para meses en pantallas grandes */
     }
 }
