@@ -14,7 +14,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    background: #3b3b5f; 
+    background: #4b4b7f; /* Nuevo color para el menú lateral */
     width: 250px;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
@@ -51,17 +51,6 @@ body {
 
 .sidebar nav ul li a:hover {
     background: rgba(255, 165, 0, 0.3);
-}
-
-/* Developer Info */
-.developer-info {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(255, 165, 0, 0.3);
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Content */
@@ -229,10 +218,11 @@ input {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    max-width: 90%;
+    max-width: 90%; /* Ajuste para pantallas pequeñas */
     width: 400px; 
 }
 
+/* Estilo para el calendario */
 #calendar-grid {
     display: flex;
     flex-direction: column;
@@ -398,11 +388,12 @@ input {
     .chatbot-window {
         width: 85%; 
         right: 10px; 
+        bottom: 80px; /* Asegura que el chatbot sea visible */
     }
 
     .chatbot-bubble {
         right: 10px;
-        bottom: 10px; 
+        bottom: 20px; 
         font-size: 1.5rem;
     }
 
@@ -411,8 +402,8 @@ input {
         padding: 16px; 
         max-width: 400px; 
         display: flex; 
-        flex-direction: row; 
-        flex-wrap: wrap; 
+        flex-direction: column; /* Asegura que los elementos dentro se alineen verticalmente */
+        align-items: center; /* Centra los elementos dentro de la modal */
     }
 
     .grid-container {
