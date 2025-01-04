@@ -14,7 +14,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    background: #3b3b5f; /* Nuevo color */
+    background: #3b3b5f; 
     width: 250px;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
@@ -26,7 +26,7 @@ body {
 }
 
 .sidebar h2 {
-    color: #ffcc00; /* Nuevo color para los títulos */
+    color: #ffcc00; 
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -124,10 +124,10 @@ button:hover {
     right: 20px;
     background: #ffa500;
     color: #fff;
-    padding: 15px; /* Ajustado para un tamaño adecuado */
+    padding: 15px; 
     border-radius: 50%;
     cursor: pointer;
-    font-size: 2rem; /* Ajustado para un tamaño adecuado de texto */
+    font-size: 2rem; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
@@ -136,9 +136,9 @@ button:hover {
     position: fixed;
     bottom: 80px;
     right: 20px;
-    width: 300px; /* Ajustado para un mejor tamaño */
-    max-height: 70%; /* Limita la altura máxima */
-    background: #3b3b5f; /* Cambiado a un nuevo color */
+    width: 300px; 
+    max-height: 70%; 
+    background: #3b3b5f; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -230,14 +230,13 @@ input {
     border-radius: 10px;
     text-align: center;
     max-width: 90%;
-    width: 400px; /* Ancho fijo reducido */
+    width: 400px; 
 }
 
 #calendar-grid {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
 }
 
 /* Estilo para cada mes */
@@ -360,12 +359,12 @@ input {
     background: #ffa500;
     color: #fff;
     border: none;
-    padding: 8px 12px; /* Reducido para mayor compacidad */
+    padding: 8px 12px; 
     border-radius: 5px;
     cursor: pointer;
     margin: 20px auto;
     display: block;
-    font-size: 14px; /* Tamaño de texto más pequeño */
+    font-size: 14px; 
 }
 
 #btn-regresar:hover {
@@ -397,30 +396,30 @@ input {
     }
 
     .chatbot-window {
-        width: 85%; /* Ancho del chatbot */
-        right: 10px; /* Distancia del borde derecho */
+        width: 85%; 
+        right: 10px; 
     }
 
     .chatbot-bubble {
         right: 10px;
-        bottom: 10px; /* Ajusta la posición de la burbuja */
+        bottom: 10px; 
         font-size: 1.5rem;
     }
 
     .modal-content {
-        width: 90%; /* Asegura que la modal ocupe el 90% en móviles */
-        padding: 16px; /* Ajusta el padding */
-        max-width: 400px; /* Aumenta la máxima anchura */
-        display: flex; /* Cambia a flexbox para disposición horizontal */
-        flex-direction: row; /* Alinea los elementos en fila */
-        flex-wrap: wrap; /* Permite que los elementos se ajusten */
+        width: 90%; 
+        padding: 16px; 
+        max-width: 400px; 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
     }
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas en móviles */
-        gap: 5px; /* Espaciado entre los elementos */
-        width: 100%; /* Asegura que ocupe todo el ancho */
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 5px; 
+        width: 100%; 
     }
 
     .developer-info {
@@ -438,17 +437,17 @@ input {
 
     /* Ajustes para días del calendario */
     .calendar-item {
-        font-size: 9px; /* Ajuste del tamaño de texto en móviles */
-        padding: 4px; /* Ajuste del padding en móviles */
+        font-size: 9px; 
+        padding: 4px; 
     }
 
     #btn-regresar {
-        padding: 5px 8px; /* Ajuste del botón en móviles */
-        font-size: 11px; /* Ajuste del tamaño de texto en móviles */
+        padding: 5px 8px; 
+        font-size: 11px; 
     }
 
     .day-box {
-        padding: 6px; /* Ajusta el padding de los días */
-        font-size: 11px; /* Ajuste del tamaño de texto */
+        padding: 6px; 
+        font-size: 11px; 
     }
 }
