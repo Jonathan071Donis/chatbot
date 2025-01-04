@@ -68,12 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Cerrar modal
     if (closeModal) {
         closeModal.addEventListener("click", () => {
             modalCita.classList.add("hidden");
         });
     }
 
+    // Guardar cita
     if (saveCita) {
         saveCita.addEventListener("click", (event) => {
             event.preventDefault(); // Prevenir comportamiento por defecto
@@ -214,8 +216,6 @@ document.addEventListener("DOMContentLoaded", () => {
     actualizarDashboard();
     actualizarCalendario();
 
-
-
     document.getElementById("btn-imprimir").addEventListener("click", () => {
         const { jsPDF } = window.jspdf;
         const pdf = new jsPDF();
@@ -306,6 +306,8 @@ document.addEventListener("DOMContentLoaded", () => {
         pdf.setFont("helvetica", "bold"); // Poner en negrita
         pdf.text(`Total Generado Q${totalCosto.toFixed(2)}`, 10 + columnWidth / 2, currentY, { align: "center" });
     
+        // Pie de página centrado
+       
         // Pie de página centrado
         const footer = "Desarrollado por J. Donis";
         const footerWidth = pdf.getStringUnitWidth(footer) * pdf.internal.getFontSize() / pdf.internal.scaleFactor;
