@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #1e1e2f, #3a3a5f);
-    color: #fff;
+    background: linear-gradient(to bottom, #eaf2f8, #bbdefb); /* Colores claros */
+    color: #333;
 }
 
 .main-container {
@@ -14,10 +14,10 @@ body {
 
 /* Sidebar */
 .sidebar {
-    background: #4b4b7f; /* Nuevo color para el menú lateral */
+    background: #52cfe9; /* Color más oscuro para el menú lateral */
     width: 250px;
     padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
@@ -28,7 +28,7 @@ body {
 .sidebar h2 {
     color: #ffcc00; 
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar nav ul {
@@ -41,7 +41,7 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: #fff;
+    color: #333; /* Texto oscuro para mejor contraste */
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -50,7 +50,7 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-    background: rgba(255, 165, 0, 0.3);
+    background: rgba(255, 165, 0, 0.5); /* Color más visible al pasar el ratón */
 }
 
 /* Content */
@@ -58,15 +58,16 @@ body {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
+    background: #b0d4e8; /* Color intermedio para el panel de control */
 }
 
 header {
-    background: #3a3a5f;
+    background: #8faedb; /* Color más oscuro para el encabezado */
     padding: 10px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .stats {
@@ -76,12 +77,12 @@ header {
 }
 
 .stat {
-    background: #2a2a4a;
+    background: #e0f7fa; /* Fondo más claro para las estadísticas */
     padding: 15px;
     border-radius: 8px;
     text-align: center;
     flex: 1 1 200px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
@@ -98,7 +99,7 @@ button {
     cursor: pointer;
     margin: 10px auto;
     display: block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: background 0.3s, transform 0.3s;
 }
 
@@ -126,10 +127,10 @@ button:hover {
     bottom: 80px;
     right: 20px;
     width: 300px; 
-    max-height: 70%; 
-    background: #3b3b5f; 
+    max-height: 60%; /* Ajuste de la altura máxima */
+    background: #eaf2f8; /* Color más claro */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -150,11 +151,11 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 400px;
+    height: 300px; /* Ajuste de la altura */
     overflow-y: auto;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9; /* Color más claro para los mensajes */
 }
 
 /* Estilo para los mensajes */
@@ -185,7 +186,7 @@ footer {
     display: flex;
     gap: 10px;
     padding: 10px;
-    background: #3a3a5f;
+    background: #8faedb; /* Color más oscuro para el pie de página */
 }
 
 input {
@@ -214,7 +215,7 @@ input {
 }
 
 .modal-content {
-    background: #2a2a4a;
+    background: #e3f2fd; /* Color más claro para el contenido del modal */
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -231,8 +232,8 @@ input {
 
 /* Estilo para cada mes */
 .month-box {
-    background: #2a2a4a;
-    color: white;
+    background: #a1c4e5; /* Color más oscuro para los meses */
+    color: #333;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -246,8 +247,8 @@ input {
 
 /* Estilo para cada día del calendario */
 .calendar-item {
-    background: #2a2a4a;
-    color: #fff;
+    background: #a1c4e5; /* Color más oscuro para los días */
+    color: #333;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
@@ -257,7 +258,7 @@ input {
 }
 
 .calendar-item:hover {
-    background: #444;
+    background: #c0d3e8; /* Color al pasar el ratón */
 }
 
 /* Estilo para los días con citas (se marcarán en rojo) */
@@ -278,10 +279,10 @@ input {
     padding: 10px;
     text-align: center;
     cursor: pointer;
-    background: #2a2a4a;
-    border: 1px solid #333;
+    background: #a1c4e5;
+    border: 1px solid #aaa;
     border-radius: 5px;
-    color: white;
+    color: #333;
 }
 
 /* Estilo para los días con citas (rojo) */
@@ -293,8 +294,8 @@ input {
 
 /* Estilo para las cajas de los meses en el modal de calendario */
 .month-box {
-    background: #2a2a4a;
-    color: white;
+    background: #a1c4e5;
+    color: #333;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -322,8 +323,8 @@ input {
 
 /* Modificaciones en los días */
 .day-box {
-    background: #333;
-    color: white;
+    background: #a1c4e5;
+    color: #333;
     padding: 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -332,7 +333,7 @@ input {
 }
 
 .day-box:hover {
-    background-color: #555;
+    background-color: #c0d3e8;
 }
 
 /* Botón de cerrar modal */
@@ -389,6 +390,7 @@ input {
         width: 85%; 
         right: 10px; 
         bottom: 80px; /* Asegura que el chatbot sea visible */
+        max-height: 50%; /* Ajuste para pantallas pequeñas */
     }
 
     .chatbot-bubble {
