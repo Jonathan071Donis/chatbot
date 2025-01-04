@@ -9,20 +9,16 @@ body {
 .main-container {
     display: flex;
     height: 100vh;
-    flex-direction: row; /* Mantener la dirección de fila */
+    flex-direction: row;
 }
 
 /* Sidebar */
 .sidebar {
-    background: #2a2a4a;
-    width: 250px; /* Ancho fijo */
+    background: #3b3b5f; /* Nuevo color */
+    width: 250px;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    transition: transform 0.3s;
-    position: relative;
-    display: flex; /* Cambiado a flex para el contenido vertical */
-    flex-direction: column; /* Para que los elementos se alineen verticalmente */
 }
 
 .sidebar:hover {
@@ -30,7 +26,7 @@ body {
 }
 
 .sidebar h2 {
-    color: #ffa500;
+    color: #ffcc00; /* Nuevo color para los títulos */
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -47,23 +43,23 @@ body {
 .sidebar nav ul li a {
     color: #fff;
     text-decoration: none;
-    display: block; 
-    padding: 10px; 
-    border-radius: 5px; 
-    transition: background 0.3s; 
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .sidebar nav ul li a:hover {
-    background: rgba(255, 165, 0, 0.3); 
+    background: rgba(255, 165, 0, 0.3);
 }
 
 /* Developer Info */
 .developer-info {
-    margin-top: 20px; 
-    padding: 10px; 
-    border-radius: 5px; 
-    background: rgba(255, 165, 0, 0.3); 
-    text-align: center; 
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 165, 0, 0.3);
+    text-align: center;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -72,7 +68,7 @@ body {
 .content {
     flex: 1;
     padding: 20px;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 header {
@@ -80,14 +76,14 @@ header {
     padding: 10px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    text-align: center; 
+    text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .stats {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .stat {
@@ -95,13 +91,13 @@ header {
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    flex: 1 1 200px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.3s; 
+    flex: 1 1 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
 }
 
 .stat:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
 
 button {
@@ -111,10 +107,10 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px auto; 
-    display: block; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    transition: background 0.3s, transform 0.3s; 
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s;
 }
 
 button:hover {
@@ -128,32 +124,27 @@ button:hover {
     right: 20px;
     background: #ffa500;
     color: #fff;
-    padding: 20px; /* Aumentado para mayor tamaño */
+    padding: 15px; /* Ajustado para un tamaño adecuado */
     border-radius: 50%;
     cursor: pointer;
-    font-size: 2.5rem; /* Aumentado para mayor tamaño de texto */
+    font-size: 2rem; /* Ajustado para un tamaño adecuado de texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    display: block; /* Asegura que se muestre en dispositivos móviles */
-    transition: transform 0.2s;
-}
-
-.chatbot-bubble:hover {
-    transform: scale(1.1); /* Efecto de hover */
+    z-index: 1000;
 }
 
 .chatbot-window {
     position: fixed;
-    bottom: 80px; /* Ajustado para que aparezca encima de la burbuja */
+    bottom: 80px;
     right: 20px;
-    width: 320px; /* Aumentado para mayor tamaño */
-    background: #2a2a4a;
+    width: 300px; /* Ajustado para un mejor tamaño */
+    max-height: 70%; /* Limita la altura máxima */
+    background: #3b3b5f; /* Cambiado a un nuevo color */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    z-index: 1001; /* Asegura que esté por encima de otros elementos */
+    z-index: 1001;
 }
 
 .chatbot-window.hidden {
@@ -170,11 +161,11 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 400px; 
-    overflow-y: auto; 
+    height: 400px;
+    overflow-y: auto;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
 }
 
 /* Estilo para los mensajes */
@@ -183,22 +174,22 @@ button:hover {
     padding: 10px;
     border-radius: 8px;
     max-width: 80%;
-    word-wrap: break-word; 
+    word-wrap: break-word;
 }
 
 /* Estilo para el mensaje del usuario */
 .usuario {
-    background-color: #dcf8c6; 
-    align-self: flex-end; 
-    color: #000; 
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    color: #000;
 }
 
 /* Estilo para el mensaje del chatbot */
 .chatbot {
-    background-color: #ffffff; 
-    align-self: flex-start; 
-    border: 1px solid #ccc; 
-    color: #000; 
+    background-color: #ffffff;
+    align-self: flex-start;
+    border: 1px solid #ccc;
+    color: #000;
 }
 
 footer {
@@ -226,7 +217,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .modal.hidden {
@@ -235,17 +226,17 @@ input {
 
 .modal-content {
     background: #2a2a4a;
-    padding: 15px; /* Reducido para mayor compacidad */
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
-    max-width: 90%;   
+    max-width: 90%;
     width: 400px; /* Ancho fijo reducido */
 }
 
 #calendar-grid {
-    display: flex; /* Asegúrate de que sea flex */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    gap: 10px; /* Espaciado entre los meses */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 10px;
 }
 
@@ -260,8 +251,8 @@ input {
 }
 
 .month-box:hover {
-    transform: translateY(-5px); 
-    background: linear-gradient(135deg, #ffa500, #ffcc00); 
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ffa500, #ffcc00);
 }
 
 /* Estilo para cada día del calendario */
@@ -269,11 +260,11 @@ input {
     background: #2a2a4a;
     color: #fff;
     border-radius: 5px;
-    padding: 10px; /* Reducido para compactar los elementos */
+    padding: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 14px; /* Tamaño de texto más pequeño */
+    font-size: 14px;
 }
 
 .calendar-item:hover {
@@ -282,14 +273,14 @@ input {
 
 /* Estilo para los días con citas (se marcarán en rojo) */
 .calendar-item.has-citas {
-    background-color: #ff6666; 
+    background-color: #ff6666;
     font-weight: bold;
     color: white;
 }
 
 /* Estilo para los días seleccionados */
 .calendar-item.selected {
-    background-color: #ffa500; 
+    background-color: #ffa500;
     color: white;
 }
 
@@ -324,13 +315,13 @@ input {
 /* Nuevos estilos para organizar los meses verticalmente */
 .months-container {
     display: flex;
-    flex-direction: column; /* Asegura que los meses se apilen verticalmente */
-    gap: 10px; /* Espacio entre los meses */
+    flex-direction: column;
+    gap: 10px;
 }
 
 .month-box:hover {
-    transform: translateY(-5px); 
-    background: linear-gradient(135deg, #ffa500, #ffcc00); 
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #ffa500, #ffcc00);
 }
 
 /* Cambios en el modal y días */
@@ -372,8 +363,8 @@ input {
     padding: 8px 12px; /* Reducido para mayor compacidad */
     border-radius: 5px;
     cursor: pointer;
-    margin: 20px auto; 
-    display: block; 
+    margin: 20px auto;
+    display: block;
     font-size: 14px; /* Tamaño de texto más pequeño */
 }
 
@@ -384,51 +375,36 @@ input {
 /* Responsive styles */
 @media (max-width: 768px) {
     .main-container {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .sidebar {
-        width: 100%; 
-        box-shadow: none; 
+        width: 100%;
+        box-shadow: none;
     }
 
     .content {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .stats {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .stat {
-        flex: 1 1 100%; 
-        margin-bottom: 10px; 
+        flex: 1 1 100%;
+        margin-bottom: 10px;
     }
 
     .chatbot-window {
         width: 85%; /* Ancho del chatbot */
         right: 10px; /* Distancia del borde derecho */
-        bottom: 80px; /* Distancia del borde inferior */
-        max-height: 70%; /* Limita la altura máxima */
-        overflow-y: auto; /* Permite desplazamiento */
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
-        position: fixed; /* Mantiene la ventana visible */
-        background: #2a2a4a; /* Color de fondo */
-        z-index: 1000; /* Asegura que esté por encima de otros elementos */
     }
 
     .chatbot-bubble {
-        right: 10px; 
+        right: 10px;
         bottom: 10px; /* Ajusta la posición de la burbuja */
-        font-size: 1.5rem; 
-        display: block; /* Asegura que se muestre en móviles */
-        background: #ffa500; /* Color de fondo de la burbuja */
-        color: #fff; /* Color del texto */
-        padding: 15px; /* Espaciado interno */
-        border-radius: 20px; /* Bordes redondeados para el estilo burbuja */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de alerta */
-        cursor: pointer; /* Cambia el cursor al pasar sobre la burbuja */
+        font-size: 1.5rem;
     }
 
     .modal-content {
@@ -441,23 +417,23 @@ input {
     }
 
     .grid-container {
-        display: grid; 
+        display: grid;
         grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas en móviles */
         gap: 5px; /* Espaciado entre los elementos */
         width: 100%; /* Asegura que ocupe todo el ancho */
     }
 
     .developer-info {
-        bottom: 10px; 
-        font-size: 14px; 
-        width: 100%; 
-        text-align: center; 
-        transform: translateX(0); 
+        bottom: 10px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        transform: translateX(0);
     }
 
     button {
-        width: 100%; 
-        padding: 12px; 
+        width: 100%;
+        padding: 12px;
     }
 
     /* Ajustes para días del calendario */
